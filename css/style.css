@@ -71,28 +71,29 @@ html, body {
 /* form */
 
 .content{
+    width: 90%;
     box-sizing: border-box;
-    margin: 40px 0;
+    margin: 40px auto;
 }
 
 
 .content__form{
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
-    
+    position: relative;
 }
 
 .content__input{
-    width: 81%;
+    width: 100%;
     padding: 15px;
     border-radius: 7px;
+    box-sizing: border-box;
 }
-
-
 
 .content__form-select {
     position: absolute;
-    width: 80%;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .content__form-select-item {
@@ -102,17 +103,12 @@ html, body {
     border: 1px solid #423A3A;
     border-radius: 7px;
     margin-bottom: 10px;
-    width: 70%;
 }
-
-
-
 
 /* images */
 section{
     box-sizing: border-box;
     padding: 40px 0;
-    margin-right: 25px;
 }
 
 .section__content {
@@ -209,8 +205,6 @@ section{
     font-size: 15px;
 }
 
-
-
 .text__p-2 {
     font-family: Roboto snas-serif;
     font-weight: 400; 
@@ -221,14 +215,13 @@ section{
 
 .grid__text-icon {
     display: flex;
-    justify-content: space-betwwen;
+    justify-content: space-between;
     margin-top: 10px;
     padding: 0 20px 0 20px;
-
 }
 
 .grid__text-icon-1 {
-    width: 11em;
+    flex: .7;
 }
 
 .text__icon-p {
@@ -241,12 +234,6 @@ section{
 .grid__icon {
     margin-left: 105px;
     position: relative;
-}
-
-.icon-1 {
-    position: absolute;
-    bottom: 9px;
-    left: 4px;
 }
 
 .icon-2 {
