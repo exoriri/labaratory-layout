@@ -1,0 +1,400 @@
+/* Стили для всего, что не относится к медиа запросам */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto Serif', serif;
+}
+
+.page {
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__h1{
+    font-family: 'Roboto Serif', serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 64px 0 10px 0;
+    color: #423A3A;
+}
+
+ 
+.circle{
+    width: 35px;
+    height: 35px;
+    background: #FC4483;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    width: 427px;
+    height: 63px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.text {
+    text-align: center;
+}
+
+
+
+.circle__text-p{
+    font-family: 'Roboto Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0; 
+}
+
+
+/* header end */
+
+/* form */
+
+.content{
+    box-sizing: border-box;
+    margin: 40px 0;
+}
+
+
+.content__form{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.content__input{
+    width: 81%;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+
+
+.content__form-select {
+    position: absolute;
+    width: 80%;
+}
+
+.content__form-select-item {
+    background: #F9FCFF;
+    padding: 16.5px 25px 16.5px 15px;
+    font-size: 16px;
+    border: 1px solid #423A3A;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+
+
+
+/* images */
+section{
+    box-sizing: border-box;
+    padding: 40px 0;
+    margin-right: 25px;
+}
+
+.section__content {
+   display: flex;
+   padding: 0 40px 0 40px;
+   justify-content: center;
+}
+.section__box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #e8f4ff;
+   margin-right: 20px;
+   border-radius: 7px;
+   width: 114px;
+   height: 114px;
+}
+
+.images__section {
+    margin-bottom: 9px;
+}
+
+.section__p {
+    margin: 0;
+}
+
+.section__box:hover{
+   background-color: #0187fc;
+   color: white;
+}
+
+.section__p{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+.images__section {
+    width: 60px;
+    height: 57px;
+}
+
+/*grid */
+.container{
+    box-sizing: border-box;
+    
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+}    
+
+.grid__box{
+    background-color: #e8f4ff;
+    padding: 15px 0;
+    border-radius: 7px;
+}
+
+.grid__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.grid__text-1 {
+    width: 8em;
+}
+
+.grid__text-p {
+   font-family: Roboto sans-serif; 
+   font-size: 15px;
+   color: #445666;
+   font-weight: 600;
+}
+
+.grid__text__p-s {
+    display: flex;
+}
+
+.text__p-s {
+   color: #666666;
+   margin: 0 4px; 
+}
+
+.text__p-1 {
+    font-family: Roboto sans-serif;
+    color: #423a3a;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+
+.text__p-2 {
+    font-family: Roboto snas-serif;
+    font-weight: 400; 
+    font-size: 12px;
+    color: #666666;
+    margin: 3px 0;
+}
+
+.grid__text-icon {
+    display: flex;
+    justify-content: space-betwwen;
+    margin-top: 10px;
+    padding: 0 20px 0 20px;
+
+}
+
+.grid__text-icon-1 {
+    width: 11em;
+}
+
+.text__icon-p {
+    font-family: Roboto snas-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+}
+
+.grid__icon {
+    margin-left: 105px;
+    position: relative;
+}
+
+.icon-1 {
+    position: absolute;
+    bottom: 9px;
+    left: 4px;
+}
+
+.icon-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer*/
+footer{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer__wrapper {
+    width: 40em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.footer__p {
+    text-align: center;
+    margin: 17px 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0187FC;
+}
+
+
+
+.footer-text__icons {
+    width: 432px;
+    height: 64px;
+    border: 1px solid rgba(68, 86, 102, 0.45);
+    margin-bottom: 20px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+.footer-text__p {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__span {
+    color: #0187FC;
+}
+
+.footer__btn {
+    margin: 20px 0 0 0;
+}
+
+.footer__button{
+    width: 182px;
+    height: 40px;
+    border-radius: 7px;
+    border: 0;
+    padding: 10px 20xp;
+    background: #0187FC;
+    color: white;
+}
+
+.footer-wrapper__p {
+    margin-top: 11px;
+    margin-bottom: 74px;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Desktop */
+@media screen and (min-width: 660px) and (max-width: 1400px) {
+    .content__form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .content__form-select {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .section__content {
+        max-width: 100%;
+        overflow-y: auto;
+        margin-top: 10px;
+     }
+
+     .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 660px) and (max-width: 960px) {
+    .content__form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .content__form-select {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .section__content {
+        max-width: 100%;
+        overflow-y: auto;
+        margin-top: 10px;
+     }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile */
+@media script and (min-width: 320px) and (max-width: 660px) {
+    .content__form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .content__form-select {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .section__content {
+       max-width: 100%;
+       overflow-y: auto;
+       margin-top: 10px;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
