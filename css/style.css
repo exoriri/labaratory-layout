@@ -8,6 +8,7 @@ html, body {
 
 .page {
     height: 100%;
+    position: relative;
 }
 
 .header{
@@ -25,6 +26,8 @@ html, body {
     color: #423A3A;
 }
 
+
+
  
 .circle{
     width: 35px;
@@ -35,7 +38,35 @@ html, body {
     justify-content: center;
     display: flex;
     color: white;
+    position: relative;
 }
+
+.color__blue {
+    background: #aed9ff;
+}
+
+.circle__line {
+    position: absolute;
+    border: 2px solid #FC4483;
+    background: #fc4483;
+    width: 60px;
+    height: 0;
+    left: 29px;
+}
+
+
+
+.circle__line-1 {
+    position: absolute;
+    border: 2px solid #aed9ff;
+    background: #aed9ff;
+    width: 189px;
+    height: 0;
+    right: -117px;
+    bottom: 15px;
+}
+
+
 
 .group{
     display: flex;
@@ -51,6 +82,7 @@ html, body {
     margin: 0 auto;
     margin-top: 10px;
 }
+
 
 .text {
     text-align: center;
@@ -221,7 +253,7 @@ section{
 }
 
 .grid__text-icon-1 {
-    flex: .7;
+    flex: .9;
 }
 
 .text__icon-p {
@@ -252,12 +284,7 @@ footer{
 }
 
 .footer__wrapper {
-    width: 40em;
-    height: 20em;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
-    padding: 0 40px;
 }
 
 .footer__p {
@@ -268,6 +295,9 @@ footer{
     color: #0187FC;
 }
 
+.footer__text {
+    flex: .8;
+}
 
 
 .footer-text__icons {
@@ -317,7 +347,7 @@ footer{
 }
 
 /* Desktop */
-@media screen and (min-width: 660px) and (max-width: 1400px) {
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
     .content__form {
         max-width: 100%;
         margin: 0 auto;
@@ -341,14 +371,14 @@ footer{
 
 
 /* Tablet */
-@media screen and (min-width: 660px) and (max-width: 960px) {
+@media screen and (min-width: 720px) and (max-width: 1024px) {
     .content__form {
         max-width: 100%;
         margin: 0 auto;
     }
 
     .content__form-select {
-        max-width: 100%;
+        max-width: 2000%;
         margin: 0 auto;
     }
     
@@ -361,27 +391,13 @@ footer{
     .wrapper {
         grid-template-columns: 1fr 1fr;
     }
+
+    
 }
 
 /* Mobile */
-@media script and (min-width: 320px) and (max-width: 660px) {
-    .content__form {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .content__form-select {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .section__content {
-       max-width: 100%;
-       overflow-y: auto;
-       margin-top: 10px;
-    }
-
-    .wrapper {
-        grid-template-columns: 1fr;
-    }
+@media script and (mix-width: 320px) and (max-width: 660px) {
+  
+   
+    
 }
