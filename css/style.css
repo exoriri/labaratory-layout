@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html, body {
-    height: 100%;
     font-family: 'Roboto Serif', serif;
 }
 
@@ -31,74 +30,65 @@ html, body {
     overflow: hidden;
 }
  
-.circle{
-    width: 35px;
-    height: 35px;
-    background: #FC4483;
-    border-radius: 50%;
+.steps-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+.steps {
+    display: flex;
+}
+
+.steps__circle {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+    width: 35px;
+    height: 35px;
+    background: #AED9FF;
+    border-radius: 50%;
     color: white;
-    position: relative;
+    font-family: 'Roboto Serif', serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.color__blue {
-    background: #aed9ff;
+.steps__circle--pink {
+    background: #FC4483;
 }
 
-.circle__line {
-    position: absolute;
-    border: 2px solid #FC4483;
-    background: #fc4483;
-    width: 60px;
-    height: 0;
-    left: 29px;
-}
-
-
-
-.circle__line-1 {
-    position: absolute;
-    border: 2px solid #aed9ff;
-    background: #aed9ff;
-    width: 189px;
-    height: 0;
-    right: -117px;
-    bottom: 15px;
-}
-
-
-
-.group{
+.steps__circle-wrapper {
     display: flex;
-    align-items: center;
-    width: 427px;
-    height: 63px;
-}
-
-.box{
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    margin-top: 10px;
+    align-items: center;
 }
 
-
-.text {
-    text-align: center;
-}
-
-
-
-.circle__text-p{
+.steps__text {
     font-family: 'Roboto Serif', serif;
     font-size: 14px;
     font-weight: 400;
     margin: 10px 0; 
 }
 
+.steps__step {
+    position: relative;
+    flex: 1;
+}
+
+.steps__line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: calc(50% + 17.5px);
+    top: 17.5px;
+    transform: translateY(-50%);
+    background: #AED9FF;
+}
+
+.text {
+    text-align: center;
+}
 
 /* header end */
 
@@ -390,7 +380,7 @@ footer{
 @media screen and (min-width: 720px) and (max-width: 1024px) {
 
     .section__content {
-        min-width: 100px;
+        min-width: 100%;
         overflow-x: auto;
     }
     
@@ -402,10 +392,23 @@ footer{
 }
 
 /* Mobile */
-@media script and (max-width: 320px) and (min-width: 660px) {
-   
-    .body {
-        width: 90%;
-        margin: 0 auto;
+@media script and (min-width: 320px) and (max-width: 660px) {
+
+     body {
+        height: 200%;
+     }
+
+     section {
+        height: 200%;
+     }
+
+    .section__content {
+        min-width: 100%;
+        overflow-x: auto;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        height: 200%; 
     }
 }
