@@ -102,8 +102,7 @@ html, body {
 
 
 .content__form{
-    width: 100%;
-    margin: 0 auto;
+    
     position: relative;
 }
 
@@ -308,7 +307,7 @@ footer{
 
 
 .footer-text__icons {
-    width: 432px;
+    width: 90%;
     height: 64px;
     border: 1px solid rgba(68, 86, 102, 0.45);
     margin-bottom: 20px;
@@ -318,6 +317,7 @@ footer{
     justify-content: space-around;
     margin: 0 auto;
 }
+
 
 
 .footer-text__p {
@@ -392,15 +392,11 @@ footer{
 }
 
 /* Mobile */
-@media script and (min-width: 320px) and (max-width: 660px) {
-
-     body {
-        height: 200%;
-     }
-
-     section {
-        height: 200%;
-     }
+@media screen and (min-width: 320px) and (max-width: 660px) {
+       
+    .steps__text {
+        font-size: 15px;
+    }
 
     .section__content {
         min-width: 100%;
@@ -409,6 +405,5 @@ footer{
 
     .wrapper {
         grid-template-columns: 1fr;
-        height: 200%; 
     }
 }
