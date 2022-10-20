@@ -69,6 +69,7 @@ html, body {
     font-size: 14px;
     font-weight: 400;
     margin: 10px 0; 
+    text-align: center;
 }
 
 .steps__step {
@@ -102,8 +103,6 @@ html, body {
 
 
 .content__form{
-    width: 100%;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -143,6 +142,7 @@ section{
 .section__content-center {
     width: 90%;
     margin: 0 auto;
+    overflow-x: auto;
 }
 
 
@@ -158,6 +158,10 @@ section{
    padding: 0 25px; 
    padding-top: 16.5px;
    padding-bottom: 16.5px;
+}
+
+.section__box:first-child {
+   margin-left: 60px;
 }
 
 
@@ -308,7 +312,12 @@ footer{
 
 
 .footer-text__icons {
-    width: 432px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer__present {
+    width: 35%;
     height: 64px;
     border: 1px solid rgba(68, 86, 102, 0.45);
     margin-bottom: 20px;
@@ -318,7 +327,6 @@ footer{
     justify-content: space-around;
     margin: 0 auto;
 }
-
 
 .footer-text__p {
     font-family: 'Roboto Serif', serif;
@@ -355,6 +363,10 @@ footer{
 
 /* Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .footer__present {
+        width: 35%;
+    }
+
     .content__form {
         width: 100%;
         margin: 0 auto;
@@ -379,6 +391,10 @@ footer{
 /* Tablet */
 @media screen and (min-width: 720px) and (max-width: 1024px) {
 
+    .footer__present {
+        width: 66%;
+    }
+
     .section__content {
         min-width: 100%;
         overflow-x: auto;
@@ -392,15 +408,17 @@ footer{
 }
 
 /* Mobile */
+
 @media screen and (max-width: 720px) {
+       
+    .footer__present {
+        width: 100%;
+    }
 
-     body {
-        height: 200%;
-     }
+    .steps__text {
+        font-size: 15px;
+    }
 
-     section {
-        height: 200%;
-     }
 
     .section__content {
         min-width: 100%;
@@ -410,4 +428,5 @@ footer{
     .wrapper {
         grid-template-columns: 1fr;
     }
+    
 }
